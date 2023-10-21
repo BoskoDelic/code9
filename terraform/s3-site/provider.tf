@@ -16,8 +16,9 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "levi9-state-bucket"
+    name = "levi9-state-bucket"
     key = "terraform/s3-site"
     region = "us-east-1"
   }
+  
 }
